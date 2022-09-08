@@ -14,11 +14,8 @@ export default class Model {
         return await this.fetchUsers();
     }
 
-    async getUser(id) {
-        const res = await fetch(`${this.endpoint}/users/${id}.json`);
-        const data = await res.json();
-        return data;
-    }
+    // === READ/GET one user (GET) === //
+    // to do
 
     // === CREATE (POST) === //
     // to do
